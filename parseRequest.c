@@ -77,7 +77,7 @@ int Request_parseSocket(int socket, char* buffer, size_t bufferSize, Request* re
             } else if(buffer[1] == CHAR_U) { // If "U" then it is PUT request
                 result->method = RequestMethodPut;
                 continue;
-            } else if(buffer[1] == CHAR_A) { // If "O" then it is PATCH request
+            } else if(buffer[1] == CHAR_A) { // If "A" then it is PATCH request
                 result->method = RequestMethodPatch;
                 continue;
             } else {
